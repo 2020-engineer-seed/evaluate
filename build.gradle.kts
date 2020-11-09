@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "dev.siro256"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
