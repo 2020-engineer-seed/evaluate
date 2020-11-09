@@ -18,4 +18,9 @@ tasks {
         from(configurations.compileOnly.get().files.map { if (it.isDirectory) it else zipTree(it) })
         manifest.attributes("Main-Class" to "dev.siro256.evaluate.Evaluate")
     }
+
+    withType<ProcessResources> {
+        filteringCharset = "UTF-8"
+        from(projectDir) { include("LICENSE") }
+    }
 }
